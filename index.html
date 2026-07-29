@@ -181,7 +181,7 @@
 
   <section class="hero" id="download">
     <img class="heroicon" src="assets/ctdent-icon.png" alt="CT Dent Assistant" width="88" height="88">
-    <div class="pill">Windows app for CT Dent reporters · <b>v2.4.25</b></div>
+    <div class="pill">Windows app for CT Dent reporters · <b>v2.4.31</b></div>
     <h1>Your cases, ready to <span>open in one click</span></h1>
     <p class="sub">CT Dent Assistant sits next to the CT Dent portal and shows your case list.
       Click a case: it downloads the scan and opens it in your own viewer. It also keeps a note of
@@ -338,8 +338,20 @@
   </section>
 
   <section class="whatsnew">
-    <h2>What's new <span class="tag">v2.4.25</span></h2>
+    <h2>What's new <span class="tag">v2.4.31</span></h2>
     <ul>
+      <li><b>New in 2.4.31 — a stuck download can no longer stall the whole batch.</b> A transfer
+        the portal freezes is cancelled after two minutes; one throttled to a crawl is set aside
+        after five and retried at the end of the batch on a fresh link, which usually runs at full
+        speed. The Stop button now works even mid-transfer, an incomplete file is named plainly
+        instead of raising a cryptic error, and if several cases in a row fail the same way the
+        batch stops itself with one clear message rather than grinding through the rest. Finished
+        downloads also turn their button green silently — the list no longer visibly rebuilds
+        once per downloaded case.</li>
+      <li><b>New in 2.4.27 — keep an eye on storage, and clear space safely.</b> The app warns
+        when your storage drive drops below 10&nbsp;GB free, and ⚙ Advanced setup gained a
+        🧹 Storage tab that clears downloaded scans older than an age you choose. Fees, reports
+        and invoices are never touched — cleared scans simply become downloadable again.</li>
       <li><b>New in 2.4.25 — i-CAT Vision downloads are supported.</b> Some cases are offered on
         the portal under a single <i>i-CAT Vision</i> link — a cone-beam export that contains a
         standard DICOM series. The DICOM button now downloads and opens these in your DICOM
