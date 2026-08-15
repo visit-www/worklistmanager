@@ -181,7 +181,7 @@
 
   <section class="hero" id="download">
     <img class="heroicon" src="assets/ctdent-icon.png" alt="CT Dent Assistant" width="88" height="88">
-    <div class="pill">Windows app for CT Dent reporters · <b>v2.4.31</b></div>
+    <div class="pill">Windows app for CT Dent reporters · <b>v2.4.32</b></div>
     <h1>Your cases, ready to <span>open in one click</span></h1>
     <p class="sub">CT Dent Assistant sits next to the CT Dent portal and shows your case list.
       Click a case: it downloads the scan and opens it in your own viewer. It also keeps a note of
@@ -338,8 +338,12 @@
   </section>
 
   <section class="whatsnew">
-    <h2>What's new <span class="tag">v2.4.31</span></h2>
+    <h2>What's new <span class="tag">v2.4.32</span></h2>
     <ul>
+      <li><b>New in 2.4.32 — patients with more than one scan open correctly.</b> Once the first
+        scan of a multi-scan patient was downloaded, clicking the second scan's button kept
+        reopening the first scan's copy instead of downloading the second. Each scan's button now
+        fetches and opens its own scan, and the study picker ticks the ones already done.</li>
       <li><b>New in 2.4.31 — a stuck download can no longer stall the whole batch.</b> A transfer
         the portal freezes is cancelled after two minutes; one throttled to a crawl is set aside
         after five and retried at the end of the batch on a fresh link, which usually runs at full
