@@ -181,7 +181,7 @@
 
   <section class="hero" id="download">
     <img class="heroicon" src="assets/ctdent-icon.png" alt="CT Dent Assistant" width="88" height="88">
-    <div class="pill">Windows app for CT Dent reporters · <b>v2.4.32</b></div>
+    <div class="pill">Windows app for CT Dent reporters · <b>v2.4.35</b></div>
     <h1>Your cases, ready to <span>open in one click</span></h1>
     <p class="sub">CT Dent Assistant sits next to the CT Dent portal and shows your case list.
       Click a case: it downloads the scan and opens it in your own viewer. It also keeps a note of
@@ -338,8 +338,18 @@
   </section>
 
   <section class="whatsnew">
-    <h2>What's new <span class="tag">v2.4.32</span></h2>
+    <h2>What's new <span class="tag">v2.4.35</span></h2>
     <ul>
+      <li><b>New in 2.4.35 — your worklist is read in full, every time.</b> Occasionally a sync
+        stopped after the first page and showed 25 cases when the portal held 68. The app now
+        notices a page that failed to turn and tries again, and if a page still cannot be read it
+        keeps the cases it already knew about rather than dropping them off the list.</li>
+      <li><b>New in 2.4.33 — live cases no longer show a grey “Unknown” chip.</b> The portal
+        changed how it spells its in-progress status. Status wording is now read tolerantly, so
+        hyphens, run-together words and unusual spacing all match. The worklist is also sorted in
+        work order — pending first, then in progress, then drafts, then signed off — and a
+        <b>search box</b> on the action bar filters the list as you type by name, Report Req ID,
+        date, scan type or status.</li>
       <li><b>New in 2.4.32 — patients with more than one scan open correctly.</b> Once the first
         scan of a multi-scan patient was downloaded, clicking the second scan's button kept
         reopening the first scan's copy instead of downloading the second. Each scan's button now
